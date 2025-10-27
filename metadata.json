@@ -1,0 +1,7 @@
+{
+  "name": "CampusMate",
+  "description": "An installable Progressive Web App (PWA) for university students, featuring a building finder, academic status tracker, and a campus guide for newcomers. The app boasts a stunning, futuristic UI with 3D animated backgrounds, glassmorphism, and neon aesthetics.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

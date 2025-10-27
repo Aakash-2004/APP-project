@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CampusMate - Your Campus Companion</title>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="CampusMate" />
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'neon-cyan': 'hsl(180, 100%, 50%)',
+              'neon-magenta': 'hsl(300, 100%, 50%)',
+            },
+            animation: {
+              'aurora': 'aurora 60s linear infinite',
+            },
+            keyframes: {
+              aurora: {
+                from: {
+                  backgroundPosition: '50% 50%, 50% 50%',
+                },
+                to: {
+                  backgroundPosition: '350% 50%, 350% 50%',
+                },
+              },
+            },
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "@react-three/drei": "https://aistudiocdn.com/@react-three/drei@^10.7.4",
+    "@react-three/fiber": "https://aistudiocdn.com/@react-three/fiber@^9.3.0",
+    "@react-google-maps/api": "https://aistudiocdn.com/@react-google-maps/api@^2.19.3",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.12",
+    "three": "https://aistudiocdn.com/three@^0.180.0",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.8.2",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.1.2"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
